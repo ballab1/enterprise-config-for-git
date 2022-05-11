@@ -1,0 +1,41 @@
+###
+### Enterprise Config
+###  repo:  https://gitub.com/ballab1/enterprise-config-for-git
+###
+
+# Setup
+Description: Configures your machine to use Git.
+Command:     git bob
+
+# Teardown
+Description: Removes all Git credentials from your machine.
+Command:     git bob teardown
+
+# Clone
+Description: Fast clone a repository with Git LFS files and submodules.
+Command:     git bob clone <repository URL> [<target directory>]
+
+# Pull
+Description: Pull changes from a repository and all its submodules.
+Command:     git bob pull
+
+# Deleted
+Description: list the files that have been deleted from the current repository
+Command:     git bob show-deleted [-h] [<path/to/file>]
+Example:     git bob show-deleted
+
+# Help
+Description: This help page.
+Command:     git bob help
+
+# Version
+Description: Print version information.
+Command:     git bob version
+
+# Paste
+Description: upload a file as a GitHub gist
+Command:     git bob paste <path/to/file>
+
+---
+You can easily add your own commands. See https://github.com/ballab1/enterprise-config-for-git for details.
+
